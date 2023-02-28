@@ -47,3 +47,20 @@
     transform: rotate(360deg);
   }
 }
+
+.card-image {
+  position: relative;
+  width: 400px;
+  padding: 20px;
+}
+
+.card-image img {
+  z-index: 1;
+  max-width: 90%;
+  max-height: 260px;
+  border-radius: 10px;
+}
+
+.card {
+  align-items: center;
+}
