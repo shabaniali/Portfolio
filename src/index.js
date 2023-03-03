@@ -6,7 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserHistory>
+      <App />
+    </BrowserHistory>
   </React.StrictMode>,
   document.getElementById("root")
 );
