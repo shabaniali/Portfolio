@@ -2,12 +2,7 @@ import React, { useState, useEffect, lazy, Suspense } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
@@ -34,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <HashRouter>
       <Preloader load={load} />
       <Suspense fallback={<div>Loading...</div>}>
         <div className="App" id={load ? "no-scroll" : "scroll"}>
@@ -50,7 +45,7 @@ function App() {
           <Footer />
         </div>
       </Suspense>
-    </Router>
+    </HashRouter>
   );
 }
 
