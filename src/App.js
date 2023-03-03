@@ -12,16 +12,15 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import Home from "./components/Home/Home";
+// import Projects from "./components/Projects/Projects";
+// import About from "./components/About/About";
+// import Resume from "./components/Resume/ResumeNew";
 
-import Home from "./components/Home/Home";
-import Projects from "./components/Projects/Projects";
-import About from "./components/About/About";
-import Resume from "./components/Resume/ResumeNew";
-
-// const Home = lazy(() => import("./components/Home/Home"));
-// const Projects = lazy(() => import("./components/Projects/Projects"));
-// const About = lazy(() => import("./components/About/About"));
-// const Resume = lazy(() => import("./components/Resume/ResumeNew"));
+const Home = lazy(() => import("./components/Home/Home"));
+const Projects = lazy(() => import("./components/Projects/Projects"));
+const About = lazy(() => import("./components/About/About"));
+const Resume = lazy(() => import("./components/Resume/ResumeNew"));
 
 function App() {
   const [load, upadateLoad] = useState(true);
