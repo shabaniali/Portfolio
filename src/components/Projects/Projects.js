@@ -29,7 +29,7 @@ function Projects() {
               isWebsite={true}
               title="Atlas Kavir"
               description="Designed and Developed the website of AtlasKavir using HTML, CSS, Material UI, and ReactJS, specializes in agricultural products."
-              link="https://atlaskavir.ir/"
+              link="https://atlaskavir.com/"
             />
           </Col>
 
