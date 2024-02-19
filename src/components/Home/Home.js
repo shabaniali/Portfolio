@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -7,13 +7,13 @@ import Type from "./Type";
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "http://192.168.4.189:8080",
+  baseURL: "http://192.168.4.189:8087",
 });
 
 function Home() {
-  const redirect = () => {
-    apiClient.get(`/redirect`);
-  };
+  // const redirect = () => {
+  //   apiClient.get(`/redirect`);
+  // };
 
   return (
     <section>
@@ -50,7 +50,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Button onClick={redirect}>Test Redirect</Button>
+      {/* <Button onClick={redirect}>Test Redirect</Button> */}
       <Home2 />
     </section>
   );
