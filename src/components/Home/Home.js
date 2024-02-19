@@ -7,15 +7,13 @@ import Type from "./Type";
 import axios from "axios";
 
 const apiClient = axios.create({
-	baseURL: "http://192.168.4.189:8080",
+  baseURL: "http://192.168.4.189:8080",
 });
 
-
 function Home() {
-
   const redirect = () => {
-      apiClient.get(`/redirect`);
-  }
+    apiClient.get(`/redirect`);
+  };
 
   return (
     <section>
@@ -36,8 +34,6 @@ function Home() {
                 <strong className="main-name"> ALI SHABANI</strong>
               </h1>
 
-              <Button onClick={redirect}>Test Redirect</Button>
-
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
@@ -54,6 +50,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
+      <Button onClick={redirect}>Test Redirect</Button>
       <Home2 />
     </section>
   );
