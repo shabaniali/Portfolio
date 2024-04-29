@@ -9,7 +9,8 @@ import backOffice from "../../Assets/Projects/Backoffice.png";
 import CF from "../../Assets/Projects/CF.png";
 import jimbo from "../../Assets/Projects/Jimbo.png";
 import wallet from "../../Assets/Projects/Wallet(pwa-version).png";
-import vote from "../../Assets/Projects/Vote.png";
+import sejel from "../../Assets/Projects/Sejel(pwa-version).png";
+import dex from "../../Assets/Projects/Dex.png";
 
 function Projects() {
   return (
@@ -25,21 +26,30 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={atlasKavir}
-              isWebsite={true}
-              title="Atlas Kavir"
-              description="Designed and Developed the website of AtlasKavir using HTML, CSS, Material UI, and ReactJS, specializes in agricultural products."
-              link="https://atlaskavir.com/"
+              imgPath={wallet}
+              isWebsite={false}
+              title="Kuknos Wallet (PWA Version)"
+              description="Developed Kuknos Wallet (PWA) based on the Stellar Network using ReactJS, MUI v5 and Typescript."
+              link="https://m.kuknos.ir/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={sejel}
+              isWebsite={false}
+              title="Sejel (PWA Version)"
+              description="Developed Authentication and digital Certificate system (Sejel PWA) using NextJS v14, MUI v6 and Typescript."
+              link="https://sejel-new.kuknos.ir/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={nafis}
+              imgPath={dex}
               isWebsite={true}
-              title="Nafis"
-              description="Developed the website of Nafis using HTML, Tailwind css, Next.js and Typescript. which provides fabric selling."
-              link="https://nafisfabric.com/"
+              title="Kuknos Survey System"
+              description="Developed decentralized trading platform (DEX) based on the Stellar Network which the user can connect to (her/his) Kuknos wallet using Wallet Connect. using ReactJS and Ant design."
+              link="https://dex.kuknos.ir/"
             />
           </Col>
 
@@ -48,7 +58,7 @@ function Projects() {
               imgPath={backOffice}
               isWebsite={true}
               title="Kuknos BackOffice"
-              description="Designed and Developed Kuknos management panel (BackOffice) using HTML, CSS, BootStrap, and ReactJS."
+              description="Designed and Developed Kuknos management panel (BackOffice) using ReactJS and Tailwind css."
               link="https://backoffice.kuknos.ir/"
             />
           </Col>
@@ -58,8 +68,8 @@ function Projects() {
               imgPath={CF}
               isWebsite={true}
               title="Kuknos Crowdfunding (CF)"
-              description="Developed Crowdfunding platform (CF) based on the Stellar Network using HTML, CSS, Ant design, ReactJS."
-              link="https://cf.kuknos.ir/landing/home/"
+              description="Developed Crowdfunding platform (CF) based on the Stellar Network using ReactJS and Ant design.."
+              link="https://cf.kuknos.ir/"
             />
           </Col>
 
@@ -69,27 +79,27 @@ function Projects() {
               isWebsite={true}
               title="Aramesh"
               description="Developed online election system (Aramesh) based on the Stellar Network using HTML, CSS, Ant design, and ReactJS."
-              link="https://aramesh.io/"
+              link="https://vote.kuknos.ir/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={vote}
+              imgPath={atlasKavir}
               isWebsite={true}
-              title="Kuknos Survey System"
-              description="Designed and Developed Online Survey system based on the Stellar Network using HTML, CSS, Ant design, and ReactJS."
-              link="https://tceo-vote.kuknos.ir/"
+              title="Atlas Kavir"
+              description="Designed and Developed the website of AtlasKavir using HTML, CSS, MUI, and ReactJS, which specializes in agricultural products."
+              link="https://atlaskavir.ir/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={wallet}
-              isWebsite={false}
-              title="Kuknos Wallet (PWA Version)"
-              description="Developed Kuknos Wallet (PWA version) based on the Stellar Network using HTML, CSS, Ant design, and ReactJS."
-              link="https://m.kuknos.ir/"
+              imgPath={nafis}
+              isWebsite={true}
+              title="Nafis"
+              description="Developed the website of Nafis Fabric using HTML, Tailwind css, Next.js v12 and Typescript. which provides fabric selling."
+              link="https://nafisfabric.com/"
             />
           </Col>
 
