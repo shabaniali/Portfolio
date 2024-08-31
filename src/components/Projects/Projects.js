@@ -11,6 +11,7 @@ import jimbo from "../../Assets/Projects/Jimbo.png";
 import wallet from "../../Assets/Projects/Wallet(pwa-version).png";
 import sejel from "../../Assets/Projects/Sejel(pwa-version).png";
 import dex from "../../Assets/Projects/Dex.png";
+import rialPanel from "../../Assets/Projects/rialPanel.png";
 
 function Projects() {
   return (
@@ -40,6 +41,16 @@ function Projects() {
               title="Sejel (PWA Version)"
               description="Developed Authentication and digital Certificate system (Sejel PWA) using NextJS v14, MUI v6 and Typescript."
               link="https://sejel-new.kuknos.ir/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={rialPanel}
+              isWebsite={true}
+              title="Digital Rial managemen"
+              description="Developed digital Rial management panel for Post Bank, Shahr, Pasargad, Dey Banks and others using Next.js, Shadcn, and TailwindCSS, with a monorepo setup."
+              // link="https://rial-panel-postbank.dev.kuknos.ir/"
             />
           </Col>
 
