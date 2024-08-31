@@ -48,7 +48,7 @@ function Projects() {
             <ProjectCard
               imgPath={rialPanel}
               isWebsite={true}
-              title="Digital Rial managemen"
+              title="Digital Rial management Panel"
               description="Developed digital Rial management panel for Post Bank, Shahr, Pasargad, Dey Banks and others using Next.js, Shadcn, and TailwindCSS, with a monorepo setup."
               // link="https://rial-panel-postbank.dev.kuknos.ir/"
             />
