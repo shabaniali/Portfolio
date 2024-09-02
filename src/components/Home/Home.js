@@ -4,17 +4,8 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import axios from "axios";
-
-const apiClient = axios.create({
-  baseURL: "http://192.168.4.189:8087",
-});
 
 function Home() {
-  // const redirect = () => {
-  //   apiClient.get(`/redirect`);
-  // };
-
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -50,7 +41,6 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      {/* <Button onClick={redirect}>Test Redirect</Button> */}
       <Home2 />
     </section>
   );
