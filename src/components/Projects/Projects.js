@@ -120,7 +120,7 @@ function Projects() {
               isWebsite={false}
               title="Jimbo Market"
               description="Developed an Online Market named JimboMarket using HTML, CSS, Material UI, ReactJS."
-              link="https://jimbomarket.ir"
+              // link="https://jimbomarket.ir"
             />
           </Col>
         </Row>
